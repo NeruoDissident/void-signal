@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080f16">
+<meta name="description" content="Lead four specialists through three alien dungeons in a retro sci-fi first-person RPG. Play on mobile, install to your home screen, and explore offline.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Void Signal">
+<meta name="mobile-web-app-capable" content="yes">
+<title>VOID SIGNAL — Retro Sci-Fi Dungeon RPG</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./styles.css">
+<script src="./game.js" defer></script>
+<script src="./pwa.js" defer></script>
+</head>
+<body>
+<div id="void-signal">
+
+<header><div class="identity"><img src="./icons/icon-192.png" width="36" height="36" alt=""><div><div class="brand">VOID SIGNAL</div><small>DEEP SPACE EXPEDITION / 2086</small></div></div><div class="header-actions"><button id="install-app" type="button">Install</button><button data-act="sound" aria-label="Toggle sound">Sound off</button></div></header>
+<div id="vs-content"></div><footer>TURN-BASED EXPEDITION · TOUCH / WASD · ARROWS TO TURN · SPACE TO ACT<span id="offline-status" role="status"></span></footer>
+
+</div>
+
+<dialog id="install-dialog" aria-labelledby="install-title">
+<h2 id="install-title">Keep the signal close</h2>
+<p id="install-instructions"></p>
+<p>Open the game online once and wait for “Offline ready” before playing without a connection.</p>
+<form method="dialog"><button>Got it</button></form>
+</dialog>
+<noscript>VOID SIGNAL requires JavaScript. Please enable JavaScript in your browser to play.</noscript>
+</body>
+</html>
